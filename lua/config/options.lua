@@ -9,12 +9,13 @@ vim.cmd("set shiftwidth=4")
 
 local function EnforceLineNrColors()
   -- Set colors for LineNr
-  vim.api.nvim_set_hl(0, "LineNr", { fg = "#C40879", bg = "White", bold = true })
+  -- vim.api.nvim_set_hl(0, "LineNr", { fg = "#C40879", bg = "White", bold = true })
   vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#2B8FF3", bold = true })
   vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#B50603", bold = true })
 
   -- Set CursorLineNr with white background
-  vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#C40879", bg = "White", bold = true })
+  vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#ff9a0e", bg = "#c14000", bold = true })
+  vim.api.nvim_set_hl(0, "CursorLine", { bg = "#290e00" })
 end
 
 -- Call the function to apply the settings

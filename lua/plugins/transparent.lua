@@ -1,12 +1,17 @@
 return {
   "xiyaowong/transparent.nvim",
   opts = {
-    enable = true,
+    -- enable = true,
     extra_groups = {
       "NeoTreeNormal",
       "NeoTreeNormalNC",
       "NormalFloat",
     },
-    exclude = {},
+    exclude_groups = {
+      "LineNr",
+      "CursorLineNr",
+      "CursorLine",
+      "nvim-treesitter-context",
+    },
   },
 }

@@ -44,6 +44,8 @@ local celestial = {
 
 return {
   "nvim-lualine/lualine.nvim",
+  optional = true,
+  event = "VeryLazy",
   opts = {
     options = {
       theme = celestial,

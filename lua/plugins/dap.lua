@@ -1,11 +1,3 @@
-local js_based_languages = {
-  "typescript",
-  "javascript",
-  "typescriptreact",
-  "javascriptreact",
-  "vue",
-}
-
 return {
   "mfussenegger/nvim-dap",
   recommended = true,
@@ -43,8 +35,6 @@ return {
   },
 
   config = function()
-    local dap = require("dap")
-
     -- load mason-nvim-dap here, after all adapters have been setup
     if LazyVim.has("mason-nvim-dap.nvim") then
       require("mason-nvim-dap").setup(LazyVim.opts("mason-nvim-dap.nvim"))
@@ -71,93 +61,5 @@ return {
     if vim.fn.filereadable(".vscode/launch.json") then
       vscode.load_launchjs()
     end
-
-    for _, language in ipairs(js_based_languages) do
-      dap.configurations[language] = {
-        -- Debug single nodejs files
-        {
-          type = "pwa-node",
-          request = "launch",
-          name = "Launch file",
-          program = "${file}",
-          cwd = "${workspaceFolder}",
-          sourceMaps = true,
-        },
-        -- Debug nodejs processes (make sure to add --inspect when you run the process)
-        {
-          type = "pwa-node",
-          request = "attach",
-          name = "Attach",
-          processId = require("dap.utils").pick_process,
-          cwd = "${workspaceFolder}",
-          sourceMaps = true,
-        },
-        -- Debug web applications (client side)
-        {
-          type = "chrome",
-          request = "launch",
-          name = "Launch & Debug Chrome",
-          url = function()
-            local co = coroutine.running()
-            return coroutine.create(function()
-              vim.ui.input({
-                prompt = "Enter URL: ",
-                default = "http://localhost:3000",
-              }, function(url)
-                if url == nil or url == "" then
-                  return
-                else
-                  coroutine.resume(co, url)
-                end
-              end)
-            end)
-          end,
-          webRoot = vim.fn.getcwd(),
-          protocol = "inspector",
-          sourceMaps = true,
-          userDataDir = false,
-        },
-        -- Divider for the launch.json derived configs
-        {
-          name = "----- ↓ launch.json configs ↓ -----",
-          type = "",
-          request = "launch",
-        },
-      }
-    end
-    dependencies = {
-      {
-        "miscrosoft/vscode-js-debug",
-        build = "npm install --legacy-peer-deps && npx gulp vsDebugServerBundle && mv dist out",
-      },
-      {
-        "mxsdev/nvim-dap-vscode-js",
-        config = function()
-          require("dap-vscode-js").setup({
-            node_path = "node",
-
-            debugger_cmd = { "js-debug-adapter" },
-
-            debugger_path = vim.fn.resolve(vim.fn.stdpath("data") .. "/lazy/vscode-js-debug"),
-
-            adapters = {
-              "pwa-node",
-              "chrome",
-              "pwa-msedge",
-              "node-terminal",
-              "pwa-extensionHost",
-              "node-terminal",
-              "node",
-            },
-
-            log_file_path = vim.fn.stdpath("cache") .. "/dap_vscode_js.log",
-
-            log_file_level = 0,
-
-            log_console_level = vim.log.levels.ERROR,
-          })
-        end,
-      },
-    }
   end,
 }
