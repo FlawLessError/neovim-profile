@@ -80,7 +80,7 @@ return {
         illuminate = { enabled = true },
         native_lsp = { enabled = true, inlay_hints = { background = true } },
         neogit = true,
-        neotree = true,
+        neotree = false,
         semantic_tokens = true,
         treesitter = true,
         treesitter_context = true,

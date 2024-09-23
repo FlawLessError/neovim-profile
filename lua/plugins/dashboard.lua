@@ -25,7 +25,7 @@ return {
                         ▀▀▀▓▓▒▒▄▄▓▀▀                        
     ]]
 
-    logo = string.rep("\n", 8) .. logo .. "\n\n"
+    logo = string.rep("\n", 1) .. logo .. "\n\n"
 
     local opts = {
       theme = "doom",
@@ -74,7 +74,9 @@ return {
       })
     end
     vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "#FF5E0E" })
-    vim.api.nvim_set_hl(0, "DashboardCenter", { fg = "#FF5E0E" })
+    vim.api.nvim_set_hl(0, "DashboardDesc", { fg = "#ff860e" })
+    vim.api.nvim_set_hl(0, "DashboardIcon", { fg = "#FFFFFF" })
+    vim.api.nvim_set_hl(0, "DashboardKey", { fg = "#FFFFFF" })
 
     return opts
   end,

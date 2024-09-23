@@ -7,6 +7,9 @@ vim.cmd("set tabstop=4")
 vim.cmd("set softtabstop=4")
 vim.cmd("set shiftwidth=4")
 
+-- for folding a block of code
+vim.cmd("set foldmethod=indent")
+
 local function EnforceLineNrColors()
   -- Set colors for LineNr
   -- vim.api.nvim_set_hl(0, "LineNr", { fg = "#C40879", bg = "White", bold = true })
