@@ -35,7 +35,6 @@ return {
       "NeoTreeWinSeparator",
     },
 
-    -- add neotree
     exclude_groups = {
       "NormalFloat",
     },

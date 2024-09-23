@@ -19,6 +19,12 @@ local function EnforceLineNrColors()
   -- Set CursorLineNr with white background
   vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#ff9a0e", bg = "#c14000", bold = true })
   vim.api.nvim_set_hl(0, "CursorLine", { bg = "#290e00" })
+
+  vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#100500" })
+  vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", { bg = "#ff9a0e" })
+  -- vim.api.nvim_set_hl(0, "TreesitterContextSeparator", { bg = "#a780ff" })
+  vim.api.nvim_set_hl(0, "TreesitterContextBottom", { bg = "#100500" })
+  vim.api.nvim_set_hl(0, "TreesitterContextLineNumberBottom", { bg = "#290e00" })
 end
 
 -- Call the function to apply the settings
