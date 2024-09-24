@@ -15,6 +15,21 @@ return {
     { "]B", "<cmd>BufferLineMoveNext<cr>", desc = "Move buffer next" },
   },
   opts = {
+    -- TODO: recolor the burrons in the tabs so it looks facinating
+    -- highlights = {
+    --   close_button = {
+    --     fg = "#100500",
+    --     bg = "#884107",
+    --   },
+    --   close_button_visible = {
+    --     fg = "<colour-value-here>",
+    --     bg = "<colour-value-here>",
+    --   },
+    --   close_button_selected = {
+    --     fg = "#100500",
+    --     bg = "#C35E0A",
+    --   },
+    -- },
     options = {
       -- stylua: ignore
       close_command = function(n) LazyVim.ui.bufremove(n) end,

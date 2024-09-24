@@ -10,7 +10,7 @@ vim.cmd("set shiftwidth=4")
 -- for folding a block of code
 -- vim.cmd("set foldmethod=indent")
 
-local function EnforceLineNrColors()
+local function enforceColors()
   -- Set colors for LineNr
   -- vim.api.nvim_set_hl(0, "LineNr", { fg = "#C40879", bg = "White", bold = true })
   vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#2B8FF3", bold = true })
@@ -24,13 +24,13 @@ local function EnforceLineNrColors()
   vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", { bg = "#ff9a0e" })
   -- vim.api.nvim_set_hl(0, "TreesitterContextSeparator", { bg = "#a780ff" })
   vim.api.nvim_set_hl(0, "TreesitterContextBottom", { bg = "#100500" })
-  vim.api.nvim_set_hl(0, "TreesitterContextLineNumberBottom", { bg = "#290e00" })
+  vim.api.nvim_set_hl(0, "TreesitterContextLineNumberBottom", { bg = "#100500" })
 end
 
 -- Call the function to apply the settings
-EnforceLineNrColors()
+enforceColors()
 
 -- Optionally, use an autocommand to reapply these colors when the colorscheme is changed
 vim.api.nvim_create_autocmd("ColorScheme", {
-  callback = EnforceLineNrColors,
+  callback = enforceColors,
 })

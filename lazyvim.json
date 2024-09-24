@@ -1,5 +1,6 @@
 {
   "extras": [
+    "lazyvim.plugins.extras.editor.outline",
     "lazyvim.plugins.extras.util.dot",
     "lazyvim.plugins.extras.util.mini-hipatterns"
   ],
