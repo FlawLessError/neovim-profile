@@ -1,4 +1,5 @@
 # My NeoVim Configuration
-![Uploading {F5F01480-8BF0-455E-9BE4-ABE43BDC18F1}.png…]()
+![{17C18AB7-9BE6-4BB2-8096-D4E1DFBBCB84}](https://github.com/user-attachments/assets/335135f7-d144-4aa9-82ed-53f65dc1e823)
+
 
 
