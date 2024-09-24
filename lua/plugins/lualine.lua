@@ -59,12 +59,12 @@ return {
           separator = { left = "" },
           fmt = function(str)
             local mode_map = {
-              ["n"] = " NOR",
-              ["i"] = " INS",
-              ["v"] = " VIS",
-              ["V"] = " V-L",
-              ["c"] = " CMD",
-              ["R"] = " REP",
+              ["n"] = "  NOR",
+              ["i"] = "  INS",
+              ["v"] = "  VIS",
+              ["V"] = "  V-L",
+              ["c"] = "  CMD",
+              ["R"] = "  REP",
             }
             local mode = vim.fn.mode()
             return mode_map[mode] or str

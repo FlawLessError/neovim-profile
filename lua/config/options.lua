@@ -3,9 +3,9 @@
 -- Add any additional options here
 
 vim.cmd("set scrolloff=8")
-vim.cmd("set tabstop=4")
-vim.cmd("set softtabstop=4")
-vim.cmd("set shiftwidth=4")
+-- vim.cmd("set tabstop=2")
+-- vim.cmd("set softtabstop=2")
+-- vim.cmd("set shiftwidth=2")
 
 -- for folding a block of code
 -- vim.cmd("set foldmethod=indent")
@@ -16,15 +16,36 @@ local function enforceColors()
   vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#2B8FF3", bold = true })
   vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#B50603", bold = true })
 
-  -- Set CursorLineNr with white background
+  -- Set CursorLine and CursorLineNr colors
   vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#ff9a0e", bg = "#c14000", bold = true })
   vim.api.nvim_set_hl(0, "CursorLine", { bg = "#290e00" })
 
+  -- Set TreesitterContext colors
   vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#100500" })
   vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", { bg = "#ff9a0e" })
-  -- vim.api.nvim_set_hl(0, "TreesitterContextSeparator", { bg = "#a780ff" })
   vim.api.nvim_set_hl(0, "TreesitterContextBottom", { bg = "#100500" })
   vim.api.nvim_set_hl(0, "TreesitterContextLineNumberBottom", { bg = "#100500" })
+
+  -- set which-key colors
+  vim.api.nvim_set_hl(0, "WhichKey", { bg = "#100500" })
+  vim.api.nvim_set_hl(0, "WhichKeyBorder", { bg = "#ff9a0e" })
+  vim.api.nvim_set_hl(0, "WhichKeyNormal", { bg = "#100500" })
+  vim.api.nvim_set_hl(0, "WhichKeySeparator", { fg = "#ff9a0e" })
+  vim.api.nvim_set_hl(0, "WhichKeyDesc", { fg = "#ffffff" })
+  vim.api.nvim_set_hl(0, "WhichKeyGroup", { fg = "#ff9a0e" })
+  vim.api.nvim_set_hl(0, "WhichKey", { fg = "#ffffff" })
+  -- vim.api.nvim_set_hl(0, "WhichKeyIconBlue", { fg = "#ff9a0e" })
+
+  -- Set GitSigns colors
+  vim.api.nvim_set_hl(0, "GitSignsAdd", { fg = "#95CB2A" })
+  vim.api.nvim_set_hl(0, "GitSignsChange", { fg = "#5B4BE7" })
+  vim.api.nvim_set_hl(0, "GitSignsDelete", { fg = "#C30505" })
+
+  -- Set NeoTree Git Signs
+  vim.api.nvim_set_hl(0, "NeoTreeGitAdded", { fg = "#95CB2A" })
+  vim.api.nvim_set_hl(0, "NeoTreeGitModified", { fg = "#5B4BE7" })
+  vim.api.nvim_set_hl(0, "NeoTreeGitDeleted", { fg = "#C30505" })
+  vim.api.nvim_set_hl(0, "NeoTreeGitConflict", { fg = "#C30505" })
 end
 
 -- Call the function to apply the settings

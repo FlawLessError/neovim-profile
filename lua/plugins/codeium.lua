@@ -18,6 +18,6 @@ return {
     end, { expr = true, silent = true })
     vim.keymap.set("n", "<Space>ch", function()
       return vim.fn["codeium#Chat"]()
-    end, { expr = true, silent = true })
+    end, { expr = true, silent = true, desc = "Codeium Chat" })
   end,
 }
