@@ -95,6 +95,9 @@ return {
                 semicolon = "Disable",
                 arrayIndex = "Disable",
               },
+              html = {
+                filetypes = { "html", "ejs" },
+              },
             },
           },
         },
