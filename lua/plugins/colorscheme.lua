@@ -30,7 +30,7 @@ return {
           subtext0 = "#bdae93",
           overlay2 = "#a89984",
           overlay1 = "#928374",
-          overlay0 = "#6B3B1B",
+          overlay0 = "#FF9D19",
           surface2 = "#522D15",
           surface1 = "#402310",
           surface0 = "#301909",
