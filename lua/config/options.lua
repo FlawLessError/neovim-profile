@@ -55,3 +55,16 @@ enforceColors()
 vim.api.nvim_create_autocmd("ColorScheme", {
   callback = enforceColors,
 })
+
+-- Associate .ejs files with HTML filetype
+-- vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
+--   pattern = "*.ejs",
+--   callback = function()
+--     vim.bo.filetype = "html"
+--   end,
+-- })
+
+-- configuring ejs to work with html
+-- require("lspconfig").html.setup({
+--   filetypes = { "html", "ejs" }, -- Add 'ejs' here
+-- })

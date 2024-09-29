@@ -10,13 +10,3 @@ vim.api.nvim_set_keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
 
 -- toggleTerm keybindings
 vim.api.nvim_set_keymap("n", "<c-t>", '<Cmd>exe v:count1 . "ToggleTerm"<CR>', opts)
-
--- LSP remapping
-return {
-  "hrsh7th/nvim-cmp",
-  opts = function()
-    local keys = require("lazyvim.plugins.lsp.keymaps").get()
-
-    keys[#keys + 1] = { "<c-y>", "cmp.mapping.complete()" }
-  end,
-}

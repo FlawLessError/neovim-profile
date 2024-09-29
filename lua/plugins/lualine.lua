@@ -35,6 +35,9 @@ local celestial = {
     a = { fg = colors.black, bg = colors.purple, gui = "bold" },
   },
 
+  terminal = {
+    a = { fg = colors.black, bg = colors.lRed, gui = "bold" },
+  },
   inactive = {
     a = { fg = colors.orange, bg = colors.black },
     b = { fg = colors.orange, bg = colors.black },
@@ -64,6 +67,7 @@ return {
               ["v"] = "  VIS",
               ["V"] = "  V-L",
               ["c"] = "  CMD",
+              ["t"] = "  TRM",
               ["R"] = "  REP",
             }
             local mode = vim.fn.mode()
