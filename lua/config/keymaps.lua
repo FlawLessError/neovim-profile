@@ -10,3 +10,8 @@ vim.api.nvim_set_keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
 
 -- toggleTerm keybindings
 vim.api.nvim_set_keymap("n", "<c-t>", '<Cmd>exe v:count1 . "ToggleTerm"<CR>', opts)
+
+-- activate Minty
+vim.keymap.set("n", "<c-z>", function()
+  require("minty.huefy").open({ border = false })
+end, opts)
