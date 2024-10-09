@@ -52,7 +52,7 @@ return {
   opts = {
     options = {
       theme = celestial,
-      component_separators = { left = "", right = "" },
+      component_separators = { left = "", right = "\u{e289}" },
       section_separators = { left = "", right = "" },
     },
     sections = {
