@@ -52,23 +52,23 @@ return {
   opts = {
     options = {
       theme = celestial,
-      component_separators = { left = "", right = "\u{e289}" },
-      section_separators = { left = "", right = "" },
+      component_separators = { left = "", right = "" },
+      section_separators = { left = "", right = " " },
     },
     sections = {
       lualine_a = {
         {
           "mode",
-          separator = { left = "" },
+          separator = { left = " ", right = "" },
           fmt = function(str)
             local mode_map = {
-              ["n"] = "  NOR",
-              ["i"] = "  INS",
-              ["v"] = "  VIS",
-              ["V"] = "  V-L",
-              ["c"] = "  CMD",
-              ["t"] = "  TRM",
-              ["R"] = "  REP",
+              ["n"] = "NOR",
+              ["i"] = "INS",
+              ["v"] = "VIS",
+              ["V"] = "V-L",
+              ["c"] = "CMD",
+              ["t"] = "TRM",
+              ["R"] = "REP",
             }
             local mode = vim.fn.mode()
             return mode_map[mode] or str
@@ -83,8 +83,8 @@ return {
           separator = { left = "", right = "" },
           color = { fg = colors.lOrange, bg = colors.dOrange },
         },
-        { "filename", separator = { left = "", right = "" } },
-        { "diagnostics", separator = { right = "" } },
+        { "filename", separator = { right = "" } },
+        { "diagnostics", separator = { right = "" } },
       },
       lualine_c = {
         "%=", -- the divider
@@ -104,17 +104,17 @@ return {
         { "filetype" },
       },
       lualine_z = {
-        { "progress", separator = { left = "" }, color = { fg = colors.lOrange, bg = colors.dOrange } },
-        { "location", separator = { left = "", right = "" } },
+        { "progress", separator = { left = " " }, color = { fg = colors.lOrange, bg = colors.dOrange } },
+        { "location", separator = { left = " ", right = "" } },
       },
     },
     inactive_sections = {
-      lualine_a = { { "filename", separator = { left = "", right = "" } } },
+      lualine_a = { { "filename", separator = { left = " ", right = " " } } },
       lualine_b = {},
       lualine_c = {},
       lualine_x = {},
       lualine_y = {},
-      lualine_z = { { "location", separator = { left = "", right = "" } } },
+      lualine_z = { { "location", separator = { left = " ", right = " " } } },
     },
     tabline = {},
     extensions = {
