@@ -39,9 +39,9 @@ local celestial = {
     a = { fg = colors.black, bg = colors.lRed, gui = "bold" },
   },
   inactive = {
-    a = { fg = colors.orange, bg = colors.black },
-    b = { fg = colors.orange, bg = colors.black },
-    c = { fg = colors.orange },
+    a = { fg = colors.black, bg = colors.orange },
+    b = { fg = colors.black, bg = colors.orange },
+    c = { fg = colors.black },
   },
 }
 
