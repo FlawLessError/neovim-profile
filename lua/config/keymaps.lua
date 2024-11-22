@@ -8,16 +8,6 @@ local opts = { noremap = true, silent = true }
 vim.api.nvim_set_keymap("v", "J", ":m '>+1<CR>gv=gv", opts)
 vim.api.nvim_set_keymap("v", "K", ":m '<-2<CR>gv=gv", opts)
 
--- toggleTerm keybindings
-vim.api.nvim_set_keymap("n", "<c-t>", '<Cmd>exe v:count1 . "ToggleTerm"<CR>', opts)
-
-local cmp = require("cmp")
-cmp.setup({
-  mapping = {
-    ["<C-b>"] = cmp.mapping(cmp.mapping.complete(), { "i", "c" }),
-  },
-})
-
 -- activate Minty
 vim.keymap.set("n", "<c-z>", function()
   require("minty.huefy").open()
