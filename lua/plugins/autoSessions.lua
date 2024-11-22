@@ -9,4 +9,5 @@ return {
     suppressed_dirs = { "~/", "~/Projects", "~/Downloads", "/" },
     -- log_level = 'debug',
   },
+  enabled = false,
 }
