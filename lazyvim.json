@@ -4,6 +4,7 @@
     "lazyvim.plugins.extras.coding.blink",
     "lazyvim.plugins.extras.coding.luasnip",
     "lazyvim.plugins.extras.editor.outline",
+    "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.linting.eslint",
     "lazyvim.plugins.extras.ui.dashboard-nvim",
     "lazyvim.plugins.extras.util.dot",
