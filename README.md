@@ -1,3 +1,3 @@
 # My NeoVim configuration
 
-![Screenshot 2024-09-24 214828](https://github.com/user-attachments/assets/9b3d4a03-8e5e-480f-b83a-ef114292bc07)
+![{59925944-FFFF-4C90-A0A2-056ED18708FE}](https://github.com/user-attachments/assets/6bc26440-c4f8-4ad6-bab8-e73cb1259ac6)
