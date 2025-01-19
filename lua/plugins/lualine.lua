@@ -64,7 +64,7 @@ return {
       lualine_a = {
         {
           "mode",
-          separator = { left = " ", right = "" },
+          separator = { right = "" },
           fmt = function(str)
             local mode_map = {
               ["n"] = "NOR",
@@ -114,7 +114,7 @@ return {
           separator = { left = " " },
           color = { fg = colors.color_neutral_100, bg = colors.color_neutral_600 },
         },
-        { "location", separator = { left = " ", right = "" } },
+        { "location", separator = { left = " " } },
       },
     },
     inactive_sections = {
