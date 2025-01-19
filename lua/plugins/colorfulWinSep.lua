@@ -4,8 +4,8 @@ return {
   event = { "WinLeave" },
   opts = {
     hi = {
-      -- bg = "#FF5E0E",
-      fg = "#FF5E0E",
+      -- bg = "#9242d6",
+      fg = "#9242d6",
     },
     -- This plugin will not be activated for filetype in the following table.
     no_exec_files = { "packer", "TelescopePrompt", "mason", "CompetiTest", "NvimTree" },

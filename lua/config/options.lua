@@ -17,23 +17,23 @@ local function enforceColors()
   vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#B50603", bold = true })
 
   -- Set CursorLine and CursorLineNr colors
-  vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#ff9a0e", bg = "#c14000", bold = true })
-  vim.api.nvim_set_hl(0, "CursorLine", { bg = "#290e00" })
+  vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#ffffff", bg = "#4f009e", bold = true })
+  -- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#ad5fff" })
 
   -- Set TreesitterContext colors
-  vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#100500" })
-  vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", { bg = "#ff9a0e" })
-  vim.api.nvim_set_hl(0, "TreesitterContextBottom", { bg = "#100500" })
-  vim.api.nvim_set_hl(0, "TreesitterContextLineNumberBottom", { bg = "#100500" })
+  -- vim.api.nvim_set_hl(0, "TreesitterContext", { bg = "#100500" })
+  -- vim.api.nvim_set_hl(0, "TreesitterContextLineNumber", { bg = "#ff9a0e" })
+  -- vim.api.nvim_set_hl(0, "TreesitterContextBottom", { bg = "#100500" })
+  -- vim.api.nvim_set_hl(0, "TreesitterContextLineNumberBottom", { bg = "#100500" })
 
   -- set which-key colors
-  vim.api.nvim_set_hl(0, "WhichKey", { bg = "#100500" })
-  vim.api.nvim_set_hl(0, "WhichKeyBorder", { bg = "#ff9a0e" })
-  vim.api.nvim_set_hl(0, "WhichKeyNormal", { bg = "#100500" })
-  vim.api.nvim_set_hl(0, "WhichKeySeparator", { fg = "#ff9a0e" })
-  vim.api.nvim_set_hl(0, "WhichKeyDesc", { fg = "#ffffff" })
-  vim.api.nvim_set_hl(0, "WhichKeyGroup", { fg = "#ff9a0e" })
-  vim.api.nvim_set_hl(0, "WhichKey", { fg = "#ffffff" })
+  -- vim.api.nvim_set_hl(0, "WhichKey", { bg = "#100500" })
+  -- vim.api.nvim_set_hl(0, "WhichKeyBorder", { bg = "#ff9a0e" })
+  -- vim.api.nvim_set_hl(0, "WhichKeyNormal", { bg = "#100500" })
+  -- vim.api.nvim_set_hl(0, "WhichKeySeparator", { fg = "#ff9a0e" })
+  -- vim.api.nvim_set_hl(0, "WhichKeyDesc", { fg = "#ffffff" })
+  -- vim.api.nvim_set_hl(0, "WhichKeyGroup", { fg = "#ff9a0e" })
+  -- vim.api.nvim_set_hl(0, "WhichKey", { fg = "#ffffff" })
   -- vim.api.nvim_set_hl(0, "WhichKeyIconBlue", { fg = "#ff9a0e" })
 
   -- Set GitSigns colors
@@ -43,9 +43,11 @@ local function enforceColors()
 
   -- Set NeoTree Git Signs
   vim.api.nvim_set_hl(0, "NeoTreeGitAdded", { fg = "#95CB2A" })
-  vim.api.nvim_set_hl(0, "NeoTreeGitModified", { fg = "#5B4BE7" })
+  vim.api.nvim_set_hl(0, "NeoTreeGitConflict", { fg = "#c7c700" })
   vim.api.nvim_set_hl(0, "NeoTreeGitDeleted", { fg = "#C30505" })
-  vim.api.nvim_set_hl(0, "NeoTreeGitConflict", { fg = "#C30505" })
+  vim.api.nvim_set_hl(0, "NeoTreeGitIgnored", { fg = "#c5c0f6" })
+  vim.api.nvim_set_hl(0, "NeoTreeGitModified", { fg = "#5B4BE7" })
+  vim.api.nvim_set_hl(0, "NeoTreeGitUntracked", { fg = "#4ae78e" })
 end
 
 -- Call the function to apply the settings

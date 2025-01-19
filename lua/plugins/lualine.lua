@@ -1,4 +1,9 @@
 local colors = {
+  color_neutral_100 = "#faf6fd",
+  color_neutral_400 = "#9242d6",
+  color_neutral_600 = "#46176d",
+  color_neutral_900 = "#10051a",
+
   yellow = "#FCD32F",
   lime = "#95CB2A",
   black = "#140A01",
@@ -14,34 +19,34 @@ local colors = {
 
 local celestial = {
   normal = {
-    a = { fg = colors.black, bg = colors.orange, gui = "bold" },
-    b = { fg = colors.orange, bg = colors.black },
-    c = { fg = colors.dBrown },
+    a = { fg = colors.color_neutral_900, bg = colors.color_neutral_400, gui = "bold" },
+    b = { fg = colors.color_neutral_400, bg = colors.color_neutral_900 },
+    c = { fg = colors.color_neutral_600 },
   },
 
   insert = {
-    a = { fg = colors.black, bg = colors.yellow, gui = "bold" },
+    a = { fg = colors.color_neutral_900, bg = colors.yellow, gui = "bold" },
   },
 
   visual = {
-    a = { fg = colors.black, bg = colors.lime, gui = "bold" },
+    a = { fg = colors.color_neutral_900, bg = colors.lime, gui = "bold" },
   },
 
   command = {
-    a = { fg = colors.black, bg = colors.lRed, gui = "bold" },
+    a = { fg = colors.color_neutral_900, bg = colors.lRed, gui = "bold" },
   },
 
   replace = {
-    a = { fg = colors.black, bg = colors.purple, gui = "bold" },
+    a = { fg = colors.color_neutral_900, bg = colors.purple, gui = "bold" },
   },
 
   terminal = {
-    a = { fg = colors.black, bg = colors.lRed, gui = "bold" },
+    a = { fg = colors.color_neutral_900, bg = colors.lRed, gui = "bold" },
   },
   inactive = {
-    a = { fg = colors.black, bg = colors.orange },
-    b = { fg = colors.black, bg = colors.orange },
-    c = { fg = colors.black },
+    a = { fg = colors.color_neutral_900, bg = colors.color_neutral_400 },
+    b = { fg = colors.color_neutral_900, bg = colors.color_neutral_400 },
+    c = { fg = colors.color_neutral_900 },
   },
 }
 
@@ -81,7 +86,7 @@ return {
           icons_enabled = true,
           icon = { "", align = "left" },
           separator = { left = "", right = "" },
-          color = { fg = colors.lOrange, bg = colors.dOrange },
+          color = { fg = colors.color_neutral_100, bg = colors.color_neutral_600 },
         },
         { "filename", separator = { right = "" } },
         { "diagnostics", separator = { right = "" } },
@@ -104,7 +109,11 @@ return {
         { "filetype" },
       },
       lualine_z = {
-        { "progress", separator = { left = " " }, color = { fg = colors.lOrange, bg = colors.dOrange } },
+        {
+          "progress",
+          separator = { left = " " },
+          color = { fg = colors.color_neutral_100, bg = colors.color_neutral_600 },
+        },
         { "location", separator = { left = " ", right = "" } },
       },
     },

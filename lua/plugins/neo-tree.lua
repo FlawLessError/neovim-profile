@@ -62,14 +62,6 @@ return {
       bind_to_cwd = false,
       follow_current_file = { enabled = true },
       use_libuv_file_watcher = true,
-      commands = {
-        image_wezterm = function(state)
-          local node = state.tree:get_node()
-          if node.type == "file" then
-            require("image_preview").PreviewImage(node.path)
-          end
-        end,
-      },
     },
     window = {
       mappings = {
@@ -119,7 +111,7 @@ return {
   },
   config = function(_, opts)
     local function on_move(data)
-      LazyVim.lsp.on_rename(data.source, data.destination)
+      Snacks.rename.on_rename_file(data.source, data.destination)
     end
 
     local events = require("neo-tree.events")
