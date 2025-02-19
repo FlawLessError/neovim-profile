@@ -50,6 +50,14 @@ local celestial = {
   },
 }
 
+local function macro_recording()
+  local mode = require("noice").api.statusline.mode.get()
+  if mode then
+    return string.match(mode, "^recording @.*") or ""
+  end
+  return ""
+end
+
 return {
   "nvim-lualine/lualine.nvim",
   optional = true,
@@ -90,6 +98,7 @@ return {
         },
         { "filename", separator = { right = "" } },
         { "diagnostics", separator = { right = "" } },
+        macro_recording,
       },
       lualine_c = {
         "%=", -- the divider

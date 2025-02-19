@@ -3,15 +3,18 @@
     "lazyvim.plugins.extras.ai.codeium",
     "lazyvim.plugins.extras.coding.blink",
     "lazyvim.plugins.extras.coding.luasnip",
+    "lazyvim.plugins.extras.editor.mini-files",
     "lazyvim.plugins.extras.editor.outline",
+    "lazyvim.plugins.extras.editor.telescope",
     "lazyvim.plugins.extras.lang.markdown",
     "lazyvim.plugins.extras.linting.eslint",
     "lazyvim.plugins.extras.ui.dashboard-nvim",
     "lazyvim.plugins.extras.util.dot",
     "lazyvim.plugins.extras.util.mini-hipatterns"
   ],
+  "install_version": 7,
   "news": {
     "NEWS.md": "10960"
   },
-  "version": 7
+  "version": 8
 }
