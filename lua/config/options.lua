@@ -70,3 +70,4 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 -- require("lspconfig").html.setup({
 --   filetypes = { "html", "ejs" }, -- Add 'ejs' here
 -- })
+--
