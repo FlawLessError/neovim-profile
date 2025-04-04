@@ -1,8 +1,8 @@
 local colors = {
   color_neutral_100 = "#faf6fd",
-  color_neutral_400 = "#9242d6",
-  color_neutral_600 = "#46176d",
-  color_neutral_900 = "#10051a",
+  color_neutral_400 = "#caa4eb",
+  color_neutral_600 = "#852bcf",
+  color_neutral_900 = "#571b8e",
 
   yellow = "#FCD32F",
   lime = "#95CB2A",

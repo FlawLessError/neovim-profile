@@ -13,7 +13,7 @@ return {
   {
     "LazyVim/LazyVim",
     opts = {
-      colorscheme = "cyberdream", -- Set Cyberdream as the colorscheme
+      colorscheme = "cyberdream-light", -- Set Cyberdream as the colorscheme
     },
   },
 }
