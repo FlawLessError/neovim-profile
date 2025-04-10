@@ -3,6 +3,7 @@ local colors = {
   color_neutral_400 = "#caa4eb",
   color_neutral_600 = "#852bcf",
   color_neutral_900 = "#571b8e",
+  color_neutral_950 = "#220a38",
 
   yellow = "#FCD32F",
   lime = "#95CB2A",
@@ -21,35 +22,41 @@ local celestial = {
   normal = {
     a = { fg = colors.color_neutral_900, bg = colors.color_neutral_400, gui = "bold" },
     b = { fg = colors.color_neutral_400, bg = colors.color_neutral_900 },
-    c = { fg = colors.color_neutral_600 },
+    c = { bg = colors.color_neutral_400 },
   },
 
   insert = {
     a = { fg = colors.color_neutral_900, bg = colors.yellow, gui = "bold" },
+    c = { bg = colors.color_neutral_400 },
   },
 
   visual = {
     a = { fg = colors.color_neutral_900, bg = colors.lime, gui = "bold" },
+    c = { bg = colors.color_neutral_400 },
   },
 
   command = {
     a = { fg = colors.color_neutral_900, bg = colors.lRed, gui = "bold" },
+    c = { bg = colors.color_neutral_400 },
   },
 
   replace = {
     a = { fg = colors.color_neutral_900, bg = colors.purple, gui = "bold" },
+    c = { bg = colors.color_neutral_400 },
   },
 
   terminal = {
     a = { fg = colors.color_neutral_900, bg = colors.lRed, gui = "bold" },
+    c = { bg = colors.color_neutral_400 },
   },
   inactive = {
     a = { fg = colors.color_neutral_900, bg = colors.color_neutral_400 },
     b = { fg = colors.color_neutral_900, bg = colors.color_neutral_400 },
-    c = { fg = colors.color_neutral_900 },
+    c = { bg = colors.color_neutral_400 },
   },
 }
 
+-- this is responsible for how the @ macro is displayed
 local function macro_recording()
   local mode = require("noice").api.statusline.mode.get()
   if mode then
@@ -66,7 +73,7 @@ return {
     options = {
       theme = celestial,
       component_separators = { left = "", right = "" },
-      section_separators = { left = "", right = " " },
+      section_separators = { left = "", right = "" },
     },
     sections = {
       lualine_a = {
@@ -103,7 +110,9 @@ return {
       lualine_c = {
         "%=", -- the divider
       },
-      lualine_x = {},
+      lualine_x = {
+        "%=", -- the divider
+      },
       lualine_y = {
         {
           "diff",
@@ -120,19 +129,19 @@ return {
       lualine_z = {
         {
           "progress",
-          separator = { left = " " },
+          separator = { left = "" },
           color = { fg = colors.color_neutral_100, bg = colors.color_neutral_600 },
         },
-        { "location", separator = { left = " " } },
+        { "location", separator = { left = "" } },
       },
     },
     inactive_sections = {
-      lualine_a = { { "filename", separator = { left = " ", right = " " } } },
+      lualine_a = { { "filename", separator = { left = "", right = "" } } },
       lualine_b = {},
       lualine_c = {},
       lualine_x = {},
       lualine_y = {},
-      lualine_z = { { "location", separator = { left = " ", right = " " } } },
+      lualine_z = { { "location", separator = { left = "", right = "" } } },
     },
     tabline = {},
     extensions = {

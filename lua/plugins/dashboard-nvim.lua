@@ -76,8 +76,8 @@ return {
     end
     vim.api.nvim_set_hl(0, "DashboardHeader", { fg = "#46176d" })
     vim.api.nvim_set_hl(0, "DashboardDesc", { fg = "#9242d6" })
-    vim.api.nvim_set_hl(0, "DashboardIcon", { fg = "#FFFFFF" })
-    vim.api.nvim_set_hl(0, "DashboardKey", { fg = "#FFFFFF" })
+    vim.api.nvim_set_hl(0, "DashboardIcon", { fg = "#a364dd" })
+    vim.api.nvim_set_hl(0, "DashboardKey", { fg = "#a364dd" })
 
     return opts
   end,
