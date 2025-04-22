@@ -5,22 +5,40 @@
 -- enables true colors
 vim.opt.termguicolors = true
 
-vim.cmd("set scrolloff=8")
--- vim.cmd("set tabstop=2")
--- vim.cmd("set softtabstop=2")
--- vim.cmd("set shiftwidth=2")
+-- number of extra lines/columns to keep between cursor and edge of screen
+vim.o.scrolloff = 8
+vim.o.sidescrolloff = 8
+
+-- disable additional junk files
+-- https://gitlab.com/jokeyrhyme/dotfiles/-/blob/main/config/nvim/init.lua#L5-11
+vim.o.swapfile = false
+
+-- tab stuff
+vim.o.smarttab = true
+vim.o.tabstop = 4
+vim.o.shiftwidth = 8
 
 -- for folding a block of code
 -- vim.cmd("set foldmethod=indent")
 
+-- auto-reload files when modified externally
+-- https://unix.stackexchange.com/a/383044
+-- https://gitlab.com/jokeyrhyme/dotfiles/-/blob/main/config/nvim/init.lua#L5-11
+vim.o.autoread = true
+vim.api.nvim_create_autocmd({ "BufEnter", "CursorHold", "CursorHoldI", "FocusGained" }, {
+  command = "if mode() != 'c' | checktime | endif",
+  pattern = { "*" },
+})
+
 local function enforceColors()
   -- Set colors for LineNr
-  -- vim.api.nvim_set_hl(0, "LineNr", { fg = "#C40879", bg = "White", bold = true })
+  vim.api.nvim_set_hl(0, "LineNr", { fg = "#C40879", bg = "White", bold = true })
   vim.api.nvim_set_hl(0, "LineNrAbove", { fg = "#2B8FF3", bold = true })
   vim.api.nvim_set_hl(0, "LineNrBelow", { fg = "#B50603", bold = true })
 
   -- Set CursorLine and CursorLineNr colors
-  vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#ffffff", bg = "#4f009e", bold = true })
+  vim.api.nvim_set_hl(0, "CursorLineNr", { fg = "#ad5fff", bg = "#4f009e", bold = true })
+  -- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#f4eafe" })
   -- vim.api.nvim_set_hl(0, "CursorLine", { bg = "#ad5fff" })
 
   -- Set TreesitterContext colors
@@ -60,17 +78,3 @@ enforceColors()
 vim.api.nvim_create_autocmd("ColorScheme", {
   callback = enforceColors,
 })
-
--- Associate .ejs files with HTML filetype
--- vim.api.nvim_create_autocmd({ "BufRead", "BufNewFile" }, {
---   pattern = "*.ejs",
---   callback = function()
---     vim.bo.filetype = "html"
---   end,
--- })
-
--- configuring ejs to work with html
--- require("lspconfig").html.setup({
---   filetypes = { "html", "ejs" }, -- Add 'ejs' here
--- })
---

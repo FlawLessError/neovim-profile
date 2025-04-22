@@ -71,7 +71,8 @@ return {
   event = "VeryLazy",
   opts = {
     options = {
-      theme = celestial,
+      -- theme = celestial,
+      theme = "tokyonight",
       component_separators = { left = "", right = "" },
       section_separators = { left = "", right = "" },
     },
@@ -101,7 +102,7 @@ return {
           icons_enabled = true,
           icon = { "", align = "left" },
           separator = { left = "", right = "" },
-          color = { fg = colors.color_neutral_100, bg = colors.color_neutral_600 },
+          -- color = { fg = colors.color_neutral_100, bg = colors.color_neutral_600 },
         },
         { "filename", separator = { right = "" } },
         { "diagnostics", separator = { right = "" } },
@@ -130,7 +131,7 @@ return {
         {
           "progress",
           separator = { left = "" },
-          color = { fg = colors.color_neutral_100, bg = colors.color_neutral_600 },
+          -- color = { fg = colors.color_neutral_100, bg = colors.color_neutral_600 },
         },
         { "location", separator = { left = "" } },
       },
