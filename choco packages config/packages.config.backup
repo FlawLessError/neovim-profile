@@ -24,15 +24,18 @@
   <package id="lua" />
   <package id="neovim" />
   <package id="nerd-fonts-Hack" />
+  <package id="nodejs" />
+  <package id="nodejs.install" />
   <package id="oh-my-posh" />
-  <package id="pnpm" />
   <package id="powershell-core" />
   <package id="pwsh" />
   <package id="python" />
   <package id="python3" />
   <package id="python311" />
   <package id="python312" />
+  <package id="python313" />
   <package id="ripgrep" />
+  <package id="tree-sitter" />
   <package id="vcredist140" />
   <package id="vcredist2005" />
   <package id="vcredist2015" />
@@ -42,5 +45,6 @@
   <package id="visualstudio-installer" />
   <package id="which" />
   <package id="winfetch" />
+  <package id="yarn" />
   <package id="zig" />
 </packages>
