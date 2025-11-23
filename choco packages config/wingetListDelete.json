@@ -1,0 +1,95 @@
+{
+  "$schema": "https://aka.ms/winget-packages.schema.2.0.json",
+  "CreationDate": "2025-11-22T22:21:46.544-00:00",
+  "Sources": [
+    {
+      "Packages": [
+        {
+          "PackageIdentifier": "Vencord.Vesktop"
+        },
+        {
+          "PackageIdentifier": "CPUID.CPU-Z"
+        },
+        {
+          "PackageIdentifier": "CPUID.HWMonitor"
+        },
+        {
+          "PackageIdentifier": "CrystalDewWorld.CrystalDiskInfo"
+        },
+        {
+          "PackageIdentifier": "CrystalDewWorld.CrystalDiskMark"
+        },
+        {
+          "PackageIdentifier": "Docker.DockerDesktop"
+        },
+        {
+          "PackageIdentifier": "REALiX.HWiNFO"
+        },
+        {
+          "PackageIdentifier": "KDE.Krita"
+        },
+        {
+          "PackageIdentifier": "dotPDN.PaintDotNet"
+        },
+        {
+          "PackageIdentifier": "BlenderFoundation.Blender"
+        },
+        {
+          "PackageIdentifier": "Inkscape.Inkscape"
+        },
+        {
+          "PackageIdentifier": "OpenJS.NodeJS"
+        },
+        {
+          "PackageIdentifier": "rocksdanister.LivelyWallpaper"
+        },
+        {
+          "PackageIdentifier": "Guru3D.Afterburner"
+        },
+        {
+          "PackageIdentifier": "OBSProject.OBSStudio"
+        },
+        {
+          "PackageIdentifier": "Guru3D.RTSS"
+        },
+        {
+          "PackageIdentifier": "Rainmeter.Rainmeter"
+        },
+        {
+          "PackageIdentifier": "WiresharkFoundation.Wireshark"
+        },
+        {
+          "PackageIdentifier": "qBittorrent.qBittorrent"
+        },
+        {
+          "PackageIdentifier": "TechPowerUp.GPU-Z"
+        },
+        {
+          "PackageIdentifier": "agalwood.Motrix"
+        },
+        {
+          "PackageIdentifier": "Anki.Anki"
+        },
+        {
+          "PackageIdentifier": "GIMP.GIMP.3"
+        },
+        {
+          "PackageIdentifier": "GodotEngine.GodotEngine"
+        },
+        {
+          "PackageIdentifier": "Rufus.Rufus"
+        },
+        {
+          "PackageIdentifier": "Obsidian.Obsidian"
+        }
+      ],
+      "SourceDetails": {
+        "Argument": "https://cdn.winget.microsoft.com/cache",
+        "Identifier": "Microsoft.Winget.Source_8wekyb3d8bbwe",
+        "Name": "winget",
+        "Type": "Microsoft.PreIndexed.Package"
+      }
+    }
+  ],
+  "WinGetVersion": "1.12.350"
+}
