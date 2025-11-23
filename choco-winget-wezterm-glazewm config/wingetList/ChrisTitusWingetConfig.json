@@ -1,0 +1,294 @@
+{
+  "Install": [
+    {
+      "winget": "VideoLAN.VLC",
+      "choco": "vlc"
+    },
+    {
+      "winget": "JanDeDobbeleer.OhMyPosh",
+      "choco": "oh-my-posh"
+    },
+    {
+      "winget": "CrystalDewWorld.CrystalDiskMark",
+      "choco": "crystaldiskmark"
+    },
+    {
+      "winget": "Rainmeter.Rainmeter",
+      "choco": "na"
+    },
+    {
+      "winget": "CPUID.CPU-Z",
+      "choco": "cpu-z"
+    },
+    {
+      "winget": "GIMP.GIMP.3",
+      "choco": "gimp"
+    },
+    {
+      "winget": "TechPowerUp.GPU-Z",
+      "choco": "gpu-z"
+    },
+    {
+      "winget": "Docker.DockerDesktop",
+      "choco": "docker-desktop"
+    },
+    {
+      "winget": "Yarn.Yarn",
+      "choco": "yarn"
+    },
+    {
+      "winget": "Microsoft.DotNet.DesktopRuntime.8",
+      "choco": "dotnet-8.0-runtime"
+    },
+    {
+      "winget": "JesseDuffield.lazygit",
+      "choco": "lazygit"
+    },
+    {
+      "winget": "Flow-Launcher.Flow-Launcher",
+      "choco": "flow-launcher"
+    },
+    {
+      "winget": "rocksdanister.LivelyWallpaper",
+      "choco": "lively"
+    },
+    {
+      "winget": "OpenJS.NodeJS.LTS",
+      "choco": "nodejs-lts"
+    },
+    {
+      "winget": "Vencord.Vesktop",
+      "choco": "na"
+    },
+    {
+      "winget": "BlenderFoundation.Blender",
+      "choco": "blender"
+    },
+    {
+      "winget": "Neovim.Neovim",
+      "choco": "neovim"
+    },
+    {
+      "winget": "voidtools.Everything",
+      "choco": "everything"
+    },
+    {
+      "winget": "TheDocumentFoundation.LibreOffice",
+      "choco": "libreoffice-fresh"
+    },
+    {
+      "winget": "qBittorrent.qBittorrent",
+      "choco": "qbittorrent"
+    },
+    {
+      "winget": "Microsoft.DotNet.DesktopRuntime.5",
+      "choco": "dotnet-5.0-runtime"
+    },
+    {
+      "winget": "CPUID.HWMonitor",
+      "choco": "hwmonitor"
+    },
+    {
+      "winget": "GitHub.cli",
+      "choco": "git;gh"
+    },
+    {
+      "winget": "Anki.Anki",
+      "choco": "anki"
+    },
+    {
+      "winget": "Microsoft.DotNet.DesktopRuntime.3_1",
+      "choco": "dotnetcore3-desktop-runtime"
+    },
+    {
+      "winget": "7zip.7zip",
+      "choco": "7zip"
+    },
+    {
+      "winget": "wez.wezterm",
+      "choco": "wezterm"
+    },
+    {
+      "winget": "Git.Git",
+      "choco": "git"
+    },
+    {
+      "winget": "REALiX.HWiNFO",
+      "choco": "hwinfo"
+    },
+    {
+      "winget": "junegunn.fzf",
+      "choco": "fzf"
+    },
+    {
+      "winget": "KDE.Krita",
+      "choco": "krita"
+    },
+    {
+      "winget": "OpenJS.NodeJS",
+      "choco": "nodejs"
+    },
+    {
+      "winget": "glzr-io.glazewm",
+      "choco": "na"
+    },
+    {
+      "winget": "OBSProject.OBSStudio",
+      "choco": "obs-studio"
+    },
+    {
+      "winget": "Microsoft.DotNet.DesktopRuntime.7",
+      "choco": "dotnet-7.0-runtime"
+    },
+    {
+      "winget": "Notepad++.Notepad++",
+      "choco": "notepadplusplus"
+    },
+    {
+      "winget": "Microsoft.DotNet.DesktopRuntime.9",
+      "choco": "dotnet-9.0-runtime"
+    },
+    {
+      "winget": "Inkscape.Inkscape",
+      "choco": "inkscape"
+    },
+    {
+      "winget": "Microsoft.PowerShell",
+      "choco": "powershell-core"
+    },
+    {
+      "winget": "Obsidian.Obsidian",
+      "choco": "obsidian"
+    },
+    {
+      "winget": "dotPDN.PaintDotNet",
+      "choco": "paint.net"
+    },
+    {
+      "winget": "agalwood.Motrix",
+      "choco": "motrix"
+    },
+    {
+      "winget": "GodotEngine.GodotEngine",
+      "choco": "godot"
+    },
+    {
+      "winget": "Guru3D.Afterburner",
+      "choco": "msiafterburner"
+    },
+    {
+      "winget": "na",
+      "choco": "equalizerapo"
+    },
+    {
+      "winget": "Python.Python.3.13",
+      "choco": "python"
+    },
+    {
+      "winget": "RevoUninstaller.RevoUninstaller",
+      "choco": "revo-uninstaller"
+    },
+    {
+      "winget": "CrystalDewWorld.CrystalDiskInfo",
+      "choco": "crystaldiskinfo"
+    },
+    {
+      "winget": "Microsoft.DotNet.DesktopRuntime.6",
+      "choco": "dotnet-6.0-runtime"
+    },
+    {
+      "winget": "flux.flux",
+      "choco": "flux"
+    },
+    {
+      "winget": "Rufus.Rufus",
+      "choco": "rufus"
+    },
+    {
+      "winget": "WiresharkFoundation.Wireshark",
+      "choco": "wireshark"
+    }
+  ],
+  "WPFInstall": [
+    "WPFInstallvlc",
+    "WPFInstallposh",
+    "WPFInstallcrystaldiskmark",
+    "WPFInstallrainmeter",
+    "WPFInstallcpuz",
+    "WPFInstallgimp",
+    "WPFInstallgpuz",
+    "WPFInstalldockerdesktop",
+    "WPFInstallyarn",
+    "WPFInstalldotnet8",
+    "WPFInstalllazygit",
+    "WPFInstallflow",
+    "WPFInstalllivelywallpaper",
+    "WPFInstallnodejslts",
+    "WPFInstallvesktop",
+    "WPFInstallblender",
+    "WPFInstallneovim",
+    "WPFInstallesearch",
+    "WPFInstalllibreoffice",
+    "WPFInstallqbittorrent",
+    "WPFInstalldotnet5",
+    "WPFInstallhwmonitor",
+    "WPFInstallgithubcli",
+    "WPFInstallanki",
+    "WPFInstalldotnet3",
+    "WPFInstall7zip",
+    "WPFInstallwezterm",
+    "WPFInstallgit",
+    "WPFInstallhwinfo",
+    "WPFInstallfzf",
+    "WPFInstallkrita",
+    "WPFInstallnodejs",
+    "WPFInstallglazewm",
+    "WPFInstallobs",
+    "WPFInstalldotnet7",
+    "WPFInstallnotepadplus",
+    "WPFInstalldotnet9",
+    "WPFInstallinkscape",
+    "WPFInstallpowershell",
+    "WPFInstallobsidian",
+    "WPFInstallPaintdotnet",
+    "WPFInstallMotrix",
+    "WPFInstallgodotengine",
+    "WPFInstallmsiafterburner",
+    "WPFInstallEqualizerAPO",
+    "WPFInstallpython3",
+    "WPFInstallrevo",
+    "WPFInstallcrystaldiskinfo",
+    "WPFInstalldotnet6",
+    "WPFInstallflux",
+    "WPFInstallrufus",
+    "WPFInstallwireshark"
+  ],
+  "WPFTweaks": [
+    "WPFTweaksRestorePoint",
+    "WPFTweaksRecallOff",
+    "WPFTweaksTeredo",
+    "WPFTweaksDebloatAdobe",
+    "WPFTweaksLoc",
+    "WPFTweaksRemoveCopilot",
+    "WPFTweaksDeleteTempFiles",
+    "WPFTweaksEndTaskOnTaskbar",
+    "WPFTweaksServices",
+    "WPFTweaksPowershell7Tele",
+    "WPFTweaksDisableExplorerAutoDiscovery",
+    "WPFTweaksDisableLMS1",
+    "WPFTweaksTele",
+    "WPFTweaksEdgeDebloat",
+    "WPFTweaksWifi",
+    "WPFTweaksRemoveGallery",
+    "WPFTweaksActivity",
+    "WPFTweaksDiskCleanup",
+    "WPFTweaksBraveDebloat",
+    "WPFTweaksRemoveHome",
+    "WPFTweaksStorage",
+    "WPFTweaksConsumerFeatures",
+    "WPFTweaksRemoveOnedrive",
+    "WPFTweaksRightClickMenu",
+    "WPFTweaksDVR"
+  ],
+  "WPFFeature": []
+}
