@@ -88,7 +88,7 @@ return {
     keymap = {
       preset = "enter",
       ["<C-y>"] = { "select_and_accept" },
-      ["<C-p>"] = { "show", "show_documentation", "hide_documentation" },
+      ["<C-l>"] = { "show", "show_documentation", "hide_documentation" },
     },
   },
   ---@param opts blink.cmp.Config | { sources: { compat: string[] } }
