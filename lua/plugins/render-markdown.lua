@@ -75,7 +75,9 @@ return {
     },
     checkbox = {
       enabled = true,
-      position = "inline",
+      --
+      -- position = "inline",
+      position = nil,
       unchecked = {
         icon = "󰄱 ",
         highlight = "RenderMarkdownUnchecked",
