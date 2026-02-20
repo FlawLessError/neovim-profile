@@ -1,0 +1,50 @@
+{
+	"$schema": "https://github.com/glzr-io/zebar/raw/v3.1.0/resources/zpack-schema.json",
+	"name": "bar-gruvvy-watermelon",
+	"version": "1.0.01",
+	"description": "Fork of bar-rose-pine with Gruvvy Watermelon theme and glazewm workspaces support.",
+	"tags": ["workspaces", "gruvvy-watermelon", "media", "glazewm"],
+	"previewImages": ["assets\\example_0.png"],
+	"repositoryUrl": "https://github.com/zacccharv/zebar-gruvvy-watermelon",
+	"widgets": [
+		{
+			"name": "bar-gruvvy-watermelon",
+			"htmlPath": "./dist/src/widgets/bar/glazewm/index.html",
+			"zOrder": "normal",
+			"shownInTaskbar": false,
+			"focused": false,
+			"resizable": false,
+			"transparent": true,
+			"includeFiles": ["dist/**/*"],
+			"caching": {
+				"defaultDuration": 604800,
+				"rules": []
+			},
+			"privileges": {
+				"shellCommands": []
+			},
+			"presets": [
+				{
+					"name": "default",
+					"anchor": "top_center",
+					"offsetX": "0px",
+					"offsetY": "0px",
+					"width": "100%",
+					"height": "55px",
+					"monitorSelection": {
+						"type": "all"
+					},
+					"dockToEdge": {
+						"enabled": false,
+						"edge": "top",
+						"windowMargin": "0px"
+					}
+				}
+			]
+		}
+	]
+}
+
+
+
+
