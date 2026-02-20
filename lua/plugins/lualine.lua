@@ -56,15 +56,6 @@ local celestial = {
   },
 }
 
--- this is responsible for how the @ macro is displayed
-local function macro_recording()
-  local mode = require("noice").api.statusline.mode.get()
-  if mode then
-    return string.match(mode, "^recording @.*") or ""
-  end
-  return ""
-end
-
 return {
   "nvim-lualine/lualine.nvim",
   optional = true,
@@ -106,7 +97,18 @@ return {
         },
         { "filename", separator = { right = "" } },
         { "diagnostics", separator = { right = "" } },
-        macro_recording,
+        {
+          "macro",
+          fmt = function()
+            local reg = vim.fn.reg_recording()
+            if reg ~= "" then
+              return "Recording @" .. reg
+            end
+            return nil
+          end,
+          color = { fg = "#b554fe" },
+          draw_empty = false,
+        },
       },
       lualine_c = {
         "%=", -- the divider
