@@ -64,8 +64,8 @@ return {
     options = {
       -- theme = celestial,
       theme = "tokyonight",
-      component_separators = { left = "", right = "" },
-      section_separators = { left = "", right = "" },
+      component_separators = { left = "|", right = "|" },
+      section_separators = { left = "", right = " " },
     },
     sections = {
       lualine_a = {
@@ -132,19 +132,19 @@ return {
       lualine_z = {
         {
           "progress",
-          separator = { left = "" },
+          separator = { left = " " },
           -- color = { fg = colors.color_neutral_100, bg = colors.color_neutral_600 },
         },
-        { "location", separator = { left = "" } },
+        { "location", separator = { left = " " } },
       },
     },
     inactive_sections = {
-      lualine_a = { { "filename", separator = { left = "", right = "" } } },
+      lualine_a = { { "filename", separator = { left = " ", right = "" } } },
       lualine_b = {},
       lualine_c = {},
       lualine_x = {},
       lualine_y = {},
-      lualine_z = { { "location", separator = { left = "", right = "" } } },
+      lualine_z = { { "location", separator = { left = " ", right = "" } } },
     },
     tabline = {},
     extensions = {
