@@ -18,43 +18,43 @@ local colors = {
   lRed = "#E31F1F",
 }
 
-local celestial = {
-  normal = {
-    a = { fg = colors.color_neutral_900, bg = colors.color_neutral_400, gui = "bold" },
-    b = { fg = colors.color_neutral_400, bg = colors.color_neutral_900 },
-    c = { bg = colors.color_neutral_400 },
-  },
-
-  insert = {
-    a = { fg = colors.color_neutral_900, bg = colors.yellow, gui = "bold" },
-    c = { bg = colors.color_neutral_400 },
-  },
-
-  visual = {
-    a = { fg = colors.color_neutral_900, bg = colors.lime, gui = "bold" },
-    c = { bg = colors.color_neutral_400 },
-  },
-
-  command = {
-    a = { fg = colors.color_neutral_900, bg = colors.lRed, gui = "bold" },
-    c = { bg = colors.color_neutral_400 },
-  },
-
-  replace = {
-    a = { fg = colors.color_neutral_900, bg = colors.purple, gui = "bold" },
-    c = { bg = colors.color_neutral_400 },
-  },
-
-  terminal = {
-    a = { fg = colors.color_neutral_900, bg = colors.lRed, gui = "bold" },
-    c = { bg = colors.color_neutral_400 },
-  },
-  inactive = {
-    a = { fg = colors.color_neutral_900, bg = colors.color_neutral_400 },
-    b = { fg = colors.color_neutral_900, bg = colors.color_neutral_400 },
-    c = { bg = colors.color_neutral_400 },
-  },
-}
+-- local celestial = {
+--   normal = {
+--     a = { fg = colors.color_neutral_900, bg = colors.color_neutral_400, gui = "bold" },
+--     b = { fg = colors.color_neutral_400, bg = colors.color_neutral_900 },
+--     c = { bg = colors.color_neutral_400 },
+--   },
+--
+--   insert = {
+--     a = { fg = colors.color_neutral_900, bg = colors.yellow, gui = "bold" },
+--     c = { bg = colors.color_neutral_400 },
+--   },
+--
+--   visual = {
+--     a = { fg = colors.color_neutral_900, bg = colors.lime, gui = "bold" },
+--     c = { bg = colors.color_neutral_400 },
+--   },
+--
+--   command = {
+--     a = { fg = colors.color_neutral_900, bg = colors.lRed, gui = "bold" },
+--     c = { bg = colors.color_neutral_400 },
+--   },
+--
+--   replace = {
+--     a = { fg = colors.color_neutral_900, bg = colors.purple, gui = "bold" },
+--     c = { bg = colors.color_neutral_400 },
+--   },
+--
+--   terminal = {
+--     a = { fg = colors.color_neutral_900, bg = colors.lRed, gui = "bold" },
+--     c = { bg = colors.color_neutral_400 },
+--   },
+--   inactive = {
+--     a = { fg = colors.color_neutral_900, bg = colors.color_neutral_400 },
+--     b = { fg = colors.color_neutral_900, bg = colors.color_neutral_400 },
+--     c = { bg = colors.color_neutral_400 },
+--   },
+-- }
 
 return {
   "nvim-lualine/lualine.nvim",
