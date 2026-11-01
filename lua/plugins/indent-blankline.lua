@@ -1,16 +1,9 @@
 return {
-  "lukas-reineke/indent-blankline.nvim",
-  main = "ibl",
-  ---@module "ibl"
-  ---@type ibl.config
-  opts = {
-
-    indent = {
-      char = "┊",
-      tab_char = "┊",
+    "lukas-reineke/indent-blankline.nvim",
+    opts = {
+        indent = {
+            char = "┊",
+            tab_char = "┊",
+        },
     },
-    exclude = {
-      filetypes = { "dashboard" },
-    },
-  },
 }
